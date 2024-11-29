@@ -1,11 +1,13 @@
 # Income Tax Calculator
 
 ## Project Description
-A TypeScript-based tax calculator that computes income tax based on Indian tax slabs.
+A TypeScript-based tax calculator that computes income tax based on predefined tax slabs.
 
 ## Features
 - Calculate tax for different income levels
+- Input validation
 - Supports multiple tax slabs
+- Precise tax calculation
 - Comprehensive unit testing
 
 ## Prerequisites
@@ -24,3 +26,6 @@ A TypeScript-based tax calculator that computes income tax based on Indian tax s
 - 3,50,001 - 6,25,000: 9% tax
 - 6,25,001 - 12,00,000: 18% tax
 - 12,00,001 and above: 35% tax
+
+## Assumptions
+- Tax for income between the maxIncome in any slab and minIncome of next slab is calculated with the rate of next slab. Example Income = 3,50,000.5, taxable income = 0.5, rate 9%, tax payable = 0.045.
